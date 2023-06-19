@@ -1,0 +1,1241 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/evagomezpulido/ontologies/2023/3/OntologiaTFG"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/evagomezpulido/ontologies/2023/3/OntologiaTFG">
+    <Prefix name="" IRI="http://www.semanticweb.org/evagomezpulido/ontologies/2023/3/OntologiaTFG/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Acceso_a_credenciales_tactica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Acceso_a_credenciales_tecnica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Acceso_inicial_tactica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Acceso_inicial_tecnica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ataque"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comando_y_control_tactica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comando_y_control_tecnica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DDoS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Discovery_tactica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Discovery_tecnica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Execution_tecnica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FTP-Patator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Impacto_tactica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Impacto_tecnica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Infiltration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mitigacion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PortScan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reconocimiento_tactica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reconocimiento_tecnica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SSH-Patator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tactica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tecnica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WebAttack_BruteForce"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WebAttack_SqlInjection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WebAttack_XSS"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ataqueSeMitigaCon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#seMitigaCon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usaSubTecnica"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usaTactica"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usaTecnica"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#descripcionMitigacion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#esSubtecnicaDe"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#flowId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#idMitigacion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#idSubTecnica"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#idTactica"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nombreSubTecnica"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nombreTactica"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#timestamp"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tipoDeAtaque"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Acceso_a_credenciales"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Acceso_inicial"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Acceso_remoto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Active_scanning"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Almacenamiento_de_datos_remoto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Autenticación_multifactor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cifrar_información_confidencial"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Comando_y_control"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Command_scripting_interpreter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Compromiso_previo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Configuración_de_software"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Denegacion_de_servicio_de_red"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Deshabilitar_o_quitar_función_o_programa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Discovery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Entrenamiento_de_usuario"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Filtrar_tráfico_de_red"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Firma_de_código"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fuerza_bruta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gestión_de_cuentas_de_usuario"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gestión_de_cuentas_privilegiadas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Impacto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Manipulacion_datos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Network_service_discovery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phishing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Políticas_de_contraseña"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Políticas_de_uso_de_la_cuenta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prevención_de_comportamiento_en_Endpoint"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prevención_de_ejecución"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prevención_de_intrusiones_en_la_red"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Proxy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Reconocimiento"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Recopilar_info_victima"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Restringir_contenido_basado_en_la_web"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Restringir_permisos_de_archivos_y_directorios"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Segmentación_de_red"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Antivirus/Antimalware"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Inspección_SSL/TLS"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Acceso_a_credenciales_tactica"/>
+        <Class IRI="#Tactica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Acceso_a_credenciales_tecnica"/>
+        <Class IRI="#Tecnica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Acceso_inicial_tactica"/>
+        <Class IRI="#Tactica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Acceso_inicial_tecnica"/>
+        <Class IRI="#Tecnica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ataque"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#ataqueSeMitigaCon"/>
+            <Class IRI="#Mitigacion"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ataque"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#usaSubTecnica"/>
+            <Class IRI="#Tecnica"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ataque"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#usaTactica"/>
+            <Class IRI="#Tactica"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ataque"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#usaTecnica"/>
+            <Class IRI="#Tecnica"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ataque"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#flowId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ataque"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#timestamp"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ataque"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#tipoDeAtaque"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bot"/>
+        <Class IRI="#Ataque"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comando_y_control_tactica"/>
+        <Class IRI="#Tactica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comando_y_control_tecnica"/>
+        <Class IRI="#Tecnica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DDoS"/>
+        <Class IRI="#Ataque"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Discovery_tactica"/>
+        <Class IRI="#Tactica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Discovery_tecnica"/>
+        <Class IRI="#Tecnica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Execution_tecnica"/>
+        <Class IRI="#Tecnica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FTP-Patator"/>
+        <Class IRI="#Ataque"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Impacto_tactica"/>
+        <Class IRI="#Tactica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Impacto_tecnica"/>
+        <Class IRI="#Tecnica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infiltration"/>
+        <Class IRI="#Ataque"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mitigacion"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#descripcionMitigacion"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mitigacion"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#idMitigacion"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PortScan"/>
+        <Class IRI="#Ataque"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reconocimiento_tactica"/>
+        <Class IRI="#Tactica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reconocimiento_tecnica"/>
+        <Class IRI="#Tecnica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SSH-Patator"/>
+        <Class IRI="#Ataque"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tactica"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#idTactica"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tactica"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#nombreTactica"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tecnica"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#seMitigaCon"/>
+            <Class IRI="#Mitigacion"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tecnica"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#esSubtecnicaDe"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tecnica"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#idSubTecnica"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tecnica"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#nombreSubTecnica"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WebAttack_BruteForce"/>
+        <Class IRI="#Ataque"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WebAttack_SqlInjection"/>
+        <Class IRI="#Ataque"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WebAttack_XSS"/>
+        <Class IRI="#Ataque"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Acceso_a_credenciales_tactica"/>
+        <NamedIndividual IRI="#Acceso_a_credenciales"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tactica"/>
+        <NamedIndividual IRI="#Acceso_a_credenciales"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Acceso_inicial_tactica"/>
+        <NamedIndividual IRI="#Acceso_inicial"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tactica"/>
+        <NamedIndividual IRI="#Acceso_inicial"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Comando_y_control_tecnica"/>
+        <NamedIndividual IRI="#Acceso_remoto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tecnica"/>
+        <NamedIndividual IRI="#Acceso_remoto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reconocimiento_tecnica"/>
+        <NamedIndividual IRI="#Active_scanning"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tecnica"/>
+        <NamedIndividual IRI="#Active_scanning"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mitigacion"/>
+        <NamedIndividual IRI="#Almacenamiento_de_datos_remoto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mitigacion"/>
+        <NamedIndividual IRI="#Autenticación_multifactor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mitigacion"/>
+        <NamedIndividual IRI="#Cifrar_información_confidencial"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Comando_y_control_tactica"/>
+        <NamedIndividual IRI="#Comando_y_control"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tactica"/>
+        <NamedIndividual IRI="#Comando_y_control"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Execution_tecnica"/>
+        <NamedIndividual IRI="#Command_scripting_interpreter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tecnica"/>
+        <NamedIndividual IRI="#Command_scripting_interpreter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mitigacion"/>
+        <NamedIndividual IRI="#Compromiso_previo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mitigacion"/>
+        <NamedIndividual IRI="#Configuración_de_software"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Impacto_tecnica"/>
+        <NamedIndividual IRI="#Denegacion_de_servicio_de_red"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tecnica"/>
+        <NamedIndividual IRI="#Denegacion_de_servicio_de_red"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mitigacion"/>
+        <NamedIndividual IRI="#Deshabilitar_o_quitar_función_o_programa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Discovery_tactica"/>
+        <NamedIndividual IRI="#Discovery"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tactica"/>
+        <NamedIndividual IRI="#Discovery"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mitigacion"/>
+        <NamedIndividual IRI="#Entrenamiento_de_usuario"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mitigacion"/>
+        <NamedIndividual IRI="#Filtrar_tráfico_de_red"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mitigacion"/>
+        <NamedIndividual IRI="#Firma_de_código"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Acceso_a_credenciales_tecnica"/>
+        <NamedIndividual IRI="#Fuerza_bruta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tecnica"/>
+        <NamedIndividual IRI="#Fuerza_bruta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mitigacion"/>
+        <NamedIndividual IRI="#Gestión_de_cuentas_de_usuario"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mitigacion"/>
+        <NamedIndividual IRI="#Gestión_de_cuentas_privilegiadas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Impacto_tactica"/>
+        <NamedIndividual IRI="#Impacto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tactica"/>
+        <NamedIndividual IRI="#Impacto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Impacto_tecnica"/>
+        <NamedIndividual IRI="#Manipulacion_datos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tecnica"/>
+        <NamedIndividual IRI="#Manipulacion_datos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Discovery_tecnica"/>
+        <NamedIndividual IRI="#Network_service_discovery"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tecnica"/>
+        <NamedIndividual IRI="#Network_service_discovery"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Acceso_inicial_tecnica"/>
+        <NamedIndividual IRI="#Phishing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tecnica"/>
+        <NamedIndividual IRI="#Phishing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mitigacion"/>
+        <NamedIndividual IRI="#Políticas_de_contraseña"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mitigacion"/>
+        <NamedIndividual IRI="#Políticas_de_uso_de_la_cuenta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mitigacion"/>
+        <NamedIndividual IRI="#Prevención_de_comportamiento_en_Endpoint"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mitigacion"/>
+        <NamedIndividual IRI="#Prevención_de_ejecución"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mitigacion"/>
+        <NamedIndividual IRI="#Prevención_de_intrusiones_en_la_red"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Comando_y_control_tecnica"/>
+        <NamedIndividual IRI="#Proxy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tecnica"/>
+        <NamedIndividual IRI="#Proxy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reconocimiento_tactica"/>
+        <NamedIndividual IRI="#Reconocimiento"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tactica"/>
+        <NamedIndividual IRI="#Reconocimiento"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reconocimiento_tecnica"/>
+        <NamedIndividual IRI="#Recopilar_info_victima"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tecnica"/>
+        <NamedIndividual IRI="#Recopilar_info_victima"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mitigacion"/>
+        <NamedIndividual IRI="#Restringir_contenido_basado_en_la_web"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mitigacion"/>
+        <NamedIndividual IRI="#Restringir_permisos_de_archivos_y_directorios"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mitigacion"/>
+        <NamedIndividual IRI="#Segmentación_de_red"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mitigacion"/>
+        <NamedIndividual IRI="#Antivirus/Antimalware"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mitigacion"/>
+        <NamedIndividual IRI="#Inspección_SSL/TLS"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Acceso_remoto"/>
+        <NamedIndividual IRI="#Filtrar_tráfico_de_red"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Acceso_remoto"/>
+        <NamedIndividual IRI="#Prevención_de_ejecución"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Acceso_remoto"/>
+        <NamedIndividual IRI="#Prevención_de_intrusiones_en_la_red"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Active_scanning"/>
+        <NamedIndividual IRI="#Compromiso_previo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Command_scripting_interpreter"/>
+        <NamedIndividual IRI="#Deshabilitar_o_quitar_función_o_programa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Command_scripting_interpreter"/>
+        <NamedIndividual IRI="#Firma_de_código"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Command_scripting_interpreter"/>
+        <NamedIndividual IRI="#Gestión_de_cuentas_privilegiadas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Command_scripting_interpreter"/>
+        <NamedIndividual IRI="#Prevención_de_comportamiento_en_Endpoint"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Command_scripting_interpreter"/>
+        <NamedIndividual IRI="#Prevención_de_ejecución"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Command_scripting_interpreter"/>
+        <NamedIndividual IRI="#Restringir_contenido_basado_en_la_web"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Command_scripting_interpreter"/>
+        <NamedIndividual IRI="#Antivirus/Antimalware"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Denegacion_de_servicio_de_red"/>
+        <NamedIndividual IRI="#Filtrar_tráfico_de_red"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Fuerza_bruta"/>
+        <NamedIndividual IRI="#Autenticación_multifactor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Fuerza_bruta"/>
+        <NamedIndividual IRI="#Gestión_de_cuentas_de_usuario"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Fuerza_bruta"/>
+        <NamedIndividual IRI="#Políticas_de_contraseña"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Fuerza_bruta"/>
+        <NamedIndividual IRI="#Políticas_de_uso_de_la_cuenta"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Manipulacion_datos"/>
+        <NamedIndividual IRI="#Almacenamiento_de_datos_remoto"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Manipulacion_datos"/>
+        <NamedIndividual IRI="#Cifrar_información_confidencial"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Manipulacion_datos"/>
+        <NamedIndividual IRI="#Restringir_permisos_de_archivos_y_directorios"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Manipulacion_datos"/>
+        <NamedIndividual IRI="#Segmentación_de_red"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Network_service_discovery"/>
+        <NamedIndividual IRI="#Deshabilitar_o_quitar_función_o_programa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Network_service_discovery"/>
+        <NamedIndividual IRI="#Prevención_de_intrusiones_en_la_red"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Network_service_discovery"/>
+        <NamedIndividual IRI="#Segmentación_de_red"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Phishing"/>
+        <NamedIndividual IRI="#Configuración_de_software"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Phishing"/>
+        <NamedIndividual IRI="#Entrenamiento_de_usuario"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Phishing"/>
+        <NamedIndividual IRI="#Prevención_de_intrusiones_en_la_red"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Phishing"/>
+        <NamedIndividual IRI="#Restringir_contenido_basado_en_la_web"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Phishing"/>
+        <NamedIndividual IRI="#Antivirus/Antimalware"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Proxy"/>
+        <NamedIndividual IRI="#Filtrar_tráfico_de_red"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Proxy"/>
+        <NamedIndividual IRI="#Prevención_de_intrusiones_en_la_red"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Proxy"/>
+        <NamedIndividual IRI="#Inspección_SSL/TLS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seMitigaCon"/>
+        <NamedIndividual IRI="#Recopilar_info_victima"/>
+        <NamedIndividual IRI="#Compromiso_previo"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idTactica"/>
+        <NamedIndividual IRI="#Acceso_a_credenciales"/>
+        <Literal>TA0006</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombreTactica"/>
+        <NamedIndividual IRI="#Acceso_a_credenciales"/>
+        <Literal>Acceso_a_credenciales</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idTactica"/>
+        <NamedIndividual IRI="#Acceso_inicial"/>
+        <Literal>TA0001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombreTactica"/>
+        <NamedIndividual IRI="#Acceso_inicial"/>
+        <Literal>Acceso_inicial</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#esSubtecnicaDe"/>
+        <NamedIndividual IRI="#Acceso_remoto"/>
+        <Literal>Comando_y_control_tecnica</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idSubTecnica"/>
+        <NamedIndividual IRI="#Acceso_remoto"/>
+        <Literal>T1219</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombreSubTecnica"/>
+        <NamedIndividual IRI="#Acceso_remoto"/>
+        <Literal>Acceso_remoto</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#esSubtecnicaDe"/>
+        <NamedIndividual IRI="#Active_scanning"/>
+        <Literal>Reconocimiento_tecnica</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idSubTecnica"/>
+        <NamedIndividual IRI="#Active_scanning"/>
+        <Literal>T1595</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombreSubTecnica"/>
+        <NamedIndividual IRI="#Active_scanning"/>
+        <Literal>Active_scanning</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionMitigacion"/>
+        <NamedIndividual IRI="#Almacenamiento_de_datos_remoto"/>
+        <Literal>Considere implementar planes de recuperación ante desastres de TI que contengan procedimientos para realizar copias de seguridad de datos periódicas que se puedan usar para restaurar datos de la organización.  Asegúrese de que las copias de seguridad se almacenen fuera del sistema y estén protegidas de los métodos comunes que los adversarios pueden usar para obtener acceso y manipular las copias de seguridad.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idMitigacion"/>
+        <NamedIndividual IRI="#Almacenamiento_de_datos_remoto"/>
+        <Literal>M1029</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionMitigacion"/>
+        <NamedIndividual IRI="#Autenticación_multifactor"/>
+        <Literal>Utilice la autenticación multifactor. Siempre que sea posible, habilite también la autenticación multifactor en los servicios externos.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idMitigacion"/>
+        <NamedIndividual IRI="#Autenticación_multifactor"/>
+        <Literal>M1032</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionMitigacion"/>
+        <NamedIndividual IRI="#Cifrar_información_confidencial"/>
+        <Literal>Considere cifrar información importante para reducir la capacidad de un adversario para realizar modificaciones de datos personalizadas.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idMitigacion"/>
+        <NamedIndividual IRI="#Cifrar_información_confidencial"/>
+        <Literal>M1041</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idTactica"/>
+        <NamedIndividual IRI="#Comando_y_control"/>
+        <Literal>TA0011</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombreTactica"/>
+        <NamedIndividual IRI="#Comando_y_control"/>
+        <Literal>Comando_y_control</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#esSubtecnicaDe"/>
+        <NamedIndividual IRI="#Command_scripting_interpreter"/>
+        <Literal>Execution_tecnica</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idSubTecnica"/>
+        <NamedIndividual IRI="#Command_scripting_interpreter"/>
+        <Literal>T1059</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombreSubTecnica"/>
+        <NamedIndividual IRI="#Command_scripting_interpreter"/>
+        <Literal>Command_scripting_interpreter</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionMitigacion"/>
+        <NamedIndividual IRI="#Compromiso_previo"/>
+        <Literal>Esta técnica no se puede mitigar fácilmente con controles preventivos ya que se basa en comportamientos realizados fuera del alcance de las defensas y controles empresariales. Los esfuerzos deben centrarse en minimizar la cantidad y la sensibilidad de los datos disponibles para las partes externas.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idMitigacion"/>
+        <NamedIndividual IRI="#Compromiso_previo"/>
+        <Literal>M1056</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionMitigacion"/>
+        <NamedIndividual IRI="#Configuración_de_software"/>
+        <Literal>Utilice mecanismos de autenticación de correo electrónico y contra la suplantación de identidad para filtrar los mensajes en función de las comprobaciones de validez del dominio del remitente (mediante SPF) y la integridad de los mensajes (mediante DKIM). Habilitar estos mecanismos dentro de una organización (a través de políticas como DMARC) puede permitir que los destinatarios (dentro de la organización y entre dominios) realicen un filtrado y una validación de mensajes similares</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idMitigacion"/>
+        <NamedIndividual IRI="#Configuración_de_software"/>
+        <Literal>M1054</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#esSubtecnicaDe"/>
+        <NamedIndividual IRI="#Denegacion_de_servicio_de_red"/>
+        <Literal>Impacto_tecnica</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idSubTecnica"/>
+        <NamedIndividual IRI="#Denegacion_de_servicio_de_red"/>
+        <Literal>T1498</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombreSubTecnica"/>
+        <NamedIndividual IRI="#Denegacion_de_servicio_de_red"/>
+        <Literal>Denegacion_de_servicio_de_red</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionMitigacion"/>
+        <NamedIndividual IRI="#Deshabilitar_o_quitar_función_o_programa"/>
+        <Literal>Deshabilite o elimine los shells o intérpretes innecesarios o no utilizados.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idMitigacion"/>
+        <NamedIndividual IRI="#Deshabilitar_o_quitar_función_o_programa"/>
+        <Literal>M1042</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idTactica"/>
+        <NamedIndividual IRI="#Discovery"/>
+        <Literal>TA0007</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombreTactica"/>
+        <NamedIndividual IRI="#Discovery"/>
+        <Literal>Discovery</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionMitigacion"/>
+        <NamedIndividual IRI="#Entrenamiento_de_usuario"/>
+        <Literal>Los usuarios pueden recibir capacitación para identificar técnicas de ingeniería social y correos electrónicos de phishing.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idMitigacion"/>
+        <NamedIndividual IRI="#Entrenamiento_de_usuario"/>
+        <Literal>M1017</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionMitigacion"/>
+        <NamedIndividual IRI="#Filtrar_tráfico_de_red"/>
+        <Literal>El tráfico a las redes de anonimato conocidas y la infraestructura C2 se puede bloquear mediante el uso de listas de bloqueo y permisos de red. Cabe señalar que este tipo de bloqueo puede evitarse mediante otras técnicas como Domain Fronting .</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idMitigacion"/>
+        <NamedIndividual IRI="#Filtrar_tráfico_de_red"/>
+        <Literal>M1037</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionMitigacion"/>
+        <NamedIndividual IRI="#Firma_de_código"/>
+        <Literal>Siempre que sea posible, solo permita la ejecución de scripts firmados.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idMitigacion"/>
+        <NamedIndividual IRI="#Firma_de_código"/>
+        <Literal>M1045</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#esSubtecnicaDe"/>
+        <NamedIndividual IRI="#Fuerza_bruta"/>
+        <Literal>Acceso_a_credenciales_tecnica</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idSubTecnica"/>
+        <NamedIndividual IRI="#Fuerza_bruta"/>
+        <Literal>T1110</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombreSubTecnica"/>
+        <NamedIndividual IRI="#Fuerza_bruta"/>
+        <Literal>Fuerza_bruta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionMitigacion"/>
+        <NamedIndividual IRI="#Gestión_de_cuentas_de_usuario"/>
+        <Literal>Restablezca proactivamente las cuentas que se sabe que forman parte de las credenciales violadas, ya sea inmediatamente o después de detectar intentos de fuerza bruta.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idMitigacion"/>
+        <NamedIndividual IRI="#Gestión_de_cuentas_de_usuario"/>
+        <Literal>M1018</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionMitigacion"/>
+        <NamedIndividual IRI="#Gestión_de_cuentas_privilegiadas"/>
+        <Literal>Cuando sea necesario PowerShell, considere restringir la política de ejecución de PowerShell a los administradores. Tenga en cuenta que existen métodos para omitir la política de ejecución de PowerShell, según la configuración del entorno. 
+
+PowerShell JEA (Just Enough Administration) también se puede usar para la administración de espacio aislado y limitar los comandos que los administradores/usuarios pueden ejecutar a través de sesiones remotas de PowerShell.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idMitigacion"/>
+        <NamedIndividual IRI="#Gestión_de_cuentas_privilegiadas"/>
+        <Literal>M1026</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idTactica"/>
+        <NamedIndividual IRI="#Impacto"/>
+        <Literal>TA0040</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombreTactica"/>
+        <NamedIndividual IRI="#Impacto"/>
+        <Literal>Impacto</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#esSubtecnicaDe"/>
+        <NamedIndividual IRI="#Manipulacion_datos"/>
+        <Literal>Impacto_tecnica</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idSubTecnica"/>
+        <NamedIndividual IRI="#Manipulacion_datos"/>
+        <Literal>T1565</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombreSubTecnica"/>
+        <NamedIndividual IRI="#Manipulacion_datos"/>
+        <Literal>Manipulacion_datos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#esSubtecnicaDe"/>
+        <NamedIndividual IRI="#Network_service_discovery"/>
+        <Literal>Discovery_tecnica</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idSubTecnica"/>
+        <NamedIndividual IRI="#Network_service_discovery"/>
+        <Literal>T1565</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombreSubTecnica"/>
+        <NamedIndividual IRI="#Network_service_discovery"/>
+        <Literal>Network_service_discovery</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#esSubtecnicaDe"/>
+        <NamedIndividual IRI="#Phishing"/>
+        <Literal>Acceso_inicial_tecnica</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idSubTecnica"/>
+        <NamedIndividual IRI="#Phishing"/>
+        <Literal>T1566</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombreSubTecnica"/>
+        <NamedIndividual IRI="#Phishing"/>
+        <Literal>Phishing</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionMitigacion"/>
+        <NamedIndividual IRI="#Políticas_de_contraseña"/>
+        <Literal>Consulte las pautas de NIST al crear políticas de contraseñas</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idMitigacion"/>
+        <NamedIndividual IRI="#Políticas_de_contraseña"/>
+        <Literal>M1027</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionMitigacion"/>
+        <NamedIndividual IRI="#Políticas_de_uso_de_la_cuenta"/>
+        <Literal>Establezca políticas de bloqueo de cuentas después de una cierta cantidad de intentos fallidos de inicio de sesión para evitar que se adivinen las contraseñas. Una política demasiado estricta puede crear una condición de denegación de servicio y hacer que los entornos queden inutilizables, con todas las cuentas utilizadas en la fuerza bruta bloqueadas. Utilice políticas de acceso condicional para bloquear los inicios de sesión desde dispositivos no compatibles o desde rangos de IP de organización definidos fuera de ella.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idMitigacion"/>
+        <NamedIndividual IRI="#Políticas_de_uso_de_la_cuenta"/>
+        <Literal>M1036</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionMitigacion"/>
+        <NamedIndividual IRI="#Prevención_de_comportamiento_en_Endpoint"/>
+        <Literal>En Windows 10, habilite las reglas de reducción de superficie de ataque (ASR) para evitar que los scripts de Visual Basic y JavaScript ejecuten contenido descargado potencialmente malicioso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idMitigacion"/>
+        <NamedIndividual IRI="#Prevención_de_comportamiento_en_Endpoint"/>
+        <Literal>M1040</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionMitigacion"/>
+        <NamedIndividual IRI="#Prevención_de_ejecución"/>
+        <Literal>Utilice el control de aplicaciones cuando corresponda. Por ejemplo, el modo de lenguaje restringido de PowerShell se puede usar para restringir el acceso a elementos de lenguaje confidenciales o peligrosos, como los que se usan para ejecutar API o archivos arbitrarios de Windows (por ejemplo, Add-Type).</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idMitigacion"/>
+        <NamedIndividual IRI="#Prevención_de_ejecución"/>
+        <Literal>M1038</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionMitigacion"/>
+        <NamedIndividual IRI="#Prevención_de_intrusiones_en_la_red"/>
+        <Literal>Los sistemas de detección y prevención de intrusiones en la red que usan firmas de red para identificar el tráfico de malware adversario específico se pueden usar para mitigar la actividad a nivel de red. Las firmas son a menudo para indicadores únicos dentro de los protocolos y pueden basarse en el protocolo C2 específico utilizado por un adversario o herramienta en particular, y probablemente serán diferentes entre varias familias y versiones de malware. Es probable que los adversarios cambien las firmas de la herramienta C2 con el tiempo o construyan protocolos de tal manera que eviten la detección por parte de las herramientas defensivas comunes.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idMitigacion"/>
+        <NamedIndividual IRI="#Prevención_de_intrusiones_en_la_red"/>
+        <Literal>M1031</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#esSubtecnicaDe"/>
+        <NamedIndividual IRI="#Proxy"/>
+        <Literal>Comando_y_control_tecnica</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idSubTecnica"/>
+        <NamedIndividual IRI="#Proxy"/>
+        <Literal>T1090</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombreSubTecnica"/>
+        <NamedIndividual IRI="#Proxy"/>
+        <Literal>Proxy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idTactica"/>
+        <NamedIndividual IRI="#Reconocimiento"/>
+        <Literal>TA0043</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombreTactica"/>
+        <NamedIndividual IRI="#Reconocimiento"/>
+        <Literal>Reconocimiento</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#esSubtecnicaDe"/>
+        <NamedIndividual IRI="#Recopilar_info_victima"/>
+        <Literal>Reconocimiento_tecnica</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idSubTecnica"/>
+        <NamedIndividual IRI="#Recopilar_info_victima"/>
+        <Literal>T1589</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombreSubTecnica"/>
+        <NamedIndividual IRI="#Recopilar_info_victima"/>
+        <Literal>Recopilar_info_victima</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionMitigacion"/>
+        <NamedIndividual IRI="#Restringir_contenido_basado_en_la_web"/>
+        <Literal>Las extensiones de bloqueo de secuencias de comandos pueden ayudar a prevenir la ejecución de secuencias de comandos y archivos HTA que pueden usarse comúnmente durante el proceso de explotación. Para el código malicioso publicado a través de anuncios, los bloqueadores de anuncios pueden ayudar a evitar que ese código se ejecute en primer lugar.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idMitigacion"/>
+        <NamedIndividual IRI="#Restringir_contenido_basado_en_la_web"/>
+        <Literal>M1021</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionMitigacion"/>
+        <NamedIndividual IRI="#Restringir_permisos_de_archivos_y_directorios"/>
+        <Literal>Asegúrese de que se apliquen los principios de privilegios mínimos a los recursos de información importantes para reducir la exposición al riesgo de manipulación de datos.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idMitigacion"/>
+        <NamedIndividual IRI="#Restringir_permisos_de_archivos_y_directorios"/>
+        <Literal>M1022</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionMitigacion"/>
+        <NamedIndividual IRI="#Segmentación_de_red"/>
+        <Literal>Identifique los procesos comerciales y del sistema críticos que pueden ser el objetivo de los adversarios y trabaje para aislar y proteger esos sistemas contra el acceso no autorizado y la manipulación.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idMitigacion"/>
+        <NamedIndividual IRI="#Segmentación_de_red"/>
+        <Literal>M1030</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionMitigacion"/>
+        <NamedIndividual IRI="#Antivirus/Antimalware"/>
+        <Literal>El antivirus se puede utilizar para poner en cuarentena automáticamente los archivos sospechosos.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idMitigacion"/>
+        <NamedIndividual IRI="#Antivirus/Antimalware"/>
+        <Literal>M1049</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionMitigacion"/>
+        <NamedIndividual IRI="#Inspección_SSL/TLS"/>
+        <Literal>Si es posible inspeccionar el tráfico HTTPS, las capturas se pueden analizar en busca de conexiones que parezcan estar al frente del dominio.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idMitigacion"/>
+        <NamedIndividual IRI="#Inspección_SSL/TLS"/>
+        <Literal>M1020</Literal>
+    </DataPropertyAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
