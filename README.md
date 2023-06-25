@@ -23,8 +23,11 @@ Este escript carga el archivo **logsPrueba.csv**. En caso de querer cargar todo 
 ## Ejecucion
 Para ejecutar el sistema se deben descargar todos los archivos de este repositorio y almacenarlos dentro de un mismo directorio.
 El unico requerimiento antes de ejectuar eel sript es disponer de la libreria OWLReady2 de Python mediante el siguiente comando
+
 > pip install owlready2
-A continuación, se podría ejecutar el script:
+
+A continuación, se podría ejecutar el script con el siguiente comando, dentro del directorio Script:
+
 > python3 ontoScript.py
 
 
