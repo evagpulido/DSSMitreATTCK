@@ -20,6 +20,14 @@ En esta carpeta se encuentran dos archivos csv:
 Esta carpeta contiene el script que completa la ontología, automatizando distintos procesos.
 Este escript carga el archivo **logsPrueba.csv**. En caso de querer cargar todo el conjunto de datos habría que modificarlo para que cargase **logsCICIDS.csv**
 
+## Ejecucion
+Para ejecutar el sistema se deben descargar todos los archivos de este repositorio y almacenarlos dentro de un mismo directorio.
+El unico requerimiento antes de ejectuar eel sript es disponer de la libreria OWLReady2 de Python mediante el siguiente comando
+> pip install owlready2
+A continuación, se podría ejecutar el script:
+> python3 ontoScript.py
+
+
 
 
 
