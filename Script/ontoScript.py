@@ -2,10 +2,10 @@ import csv
 from owlready2 import *
 
 # Carga tu ontología en Protege
-onto = get_ontology("OntologiaDSS.owl").load()
+onto = get_ontology("Ontologia/OntologiaDSS.owl").load()
 
 # Ruta del archivo CSV
-archivo_csv = "logsPrueba.csv"
+archivo_csv = "RegistrosTrafico/logsPrueba.csv"
 
 # Diccionario para realizar un seguimiento de los números asignados a cada tipo de ataque
 numeros_ataques = {}
@@ -136,4 +136,4 @@ for ataque in onto.Ataque.instances():
 
 # Guarda la instancia en la ontología
 sync_reasoner()
-onto.save("OntologiaDSS2.owl")
+onto.save("Ontologia/OntologiaDSS_Completa.owl")
