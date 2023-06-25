@@ -2,7 +2,7 @@ import csv
 from owlready2 import *
 
 # Carga tu ontología en Protege
-onto = get_ontology("OntologiaTFGPrimerIntento.owx").load()
+onto = get_ontology("OntologiaDSS.owl").load()
 
 # Ruta del archivo CSV
 archivo_csv = "logsPrueba.csv"
@@ -136,4 +136,4 @@ for ataque in onto.Ataque.instances():
 
 # Guarda la instancia en la ontología
 sync_reasoner()
-onto.save("/Users/evagomezpulido/Desktop/TFG/ONTOLGIA/pruebaInstanciasConSublcases2.owl")
+onto.save("OntologiaDSS2.owl")
