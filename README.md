@@ -45,6 +45,7 @@ Para ejecutar el script de Python, dentro del directorio Script se ejecuta el si
 
 Para los notebooks de JupyterLab, se ejecuta el siguiente comando desde una terminal dentro del directorio Preprocesamiento:
 > jupyter lab
+
 Esto abrirá JupyterLab en el navegador web predeterminado y desde ahí se podrá trabajar con los notebooks descargados desde GitHub. 
 
 
