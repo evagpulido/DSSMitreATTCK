@@ -6,6 +6,17 @@
 
 Este repositorio incluye todos los archivos necesarios para ejecutar el sistema desarrollado en el Trabajo de Fin de Grado.
 
+## Requisitos
+En primer lugar, se debe trabajar en un entorno que tenga Python instalado. De no ser así, se puede instalar desde el sitio web oficial https://www.python.org/downloads/ .
+
+El único requisito antes de ejecutar el script de Python es disponer de la librería OWLReady2, la cual se puede instalar mediante el siguiente comando:
+> pip install owlready2
+
+En el caso de los notebooks de JupyterLab, se debe disponer de esta herramienta en el sistema, el cual trabaja también con Python. Si se tiene Python instalado, se procede a instalar JupyterLab con el siguiente comando:
+> pip install jupyterlab
+
+
+
 ## Estructura
 
 ### Ontologia
@@ -27,14 +38,15 @@ Esta carpeta contiene el script que completa la ontología, automatizando distin
 Este script carga el archivo **logsPrueba.csv**. En caso de querer cargar todo el conjunto de datos habría que modificarlo para que cargase **logsCICIDS.csv**
 
 ## Ejecucion
-Para ejecutar el sistema se deben descargar todos los archivos de este repositorio y almacenarlos dentro de un mismo directorio.
-El único requerimiento antes de ejecutar el script es disponer de la librería OWLReady2 de Python mediante el siguiente comando
+Para ejecutar el sistema se deben descargar todos los archivos del repositorio y almacenarlos dentro de un mismo directorio.
 
-> pip install owlready2
-
-A continuación, se podría ejecutar el script con el siguiente comando, dentro del directorio Script:
-
+Para ejecutar el script de Python, dentro del directorio Script se ejecuta el siguiente comando:
 > python3 ontoScript.py
+
+Para los notebooks de JupyterLab, se ejecuta el siguiente comando desde una terminal dentro del directorio Preprocesamiento:
+> jupyter lab
+Esto abrirá JupyterLab en el navegador web predeterminado y desde ahí se podrá trabajar con los notebooks descargados desde GitHub. 
+
 
 
 
